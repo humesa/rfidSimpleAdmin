@@ -45,11 +45,22 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/application.js"></script>
 
+<style type="css">
+.soft-back {
+     margin: 0;
+     background: url("<c:url value="/resources/images/pcModalBack.gif" />");
+     background-repeat:no-repeat;
+     display: compact;
+     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+</style>
+
 </head>
 
 <body class="full-width">
 
     <!-- Navbar -->
+	<!--
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -102,12 +113,12 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <!-- /navbar -->
 
 
     <!-- Page container -->
-    <div class="page-container container-fluid">
+    <div class="page-container container-fluid" style="margin: 0px auto;">
     
         <!-- Page content -->
         <div class="page-content">
@@ -115,10 +126,14 @@
 
             <!-- Login wrapper -->
             <div class="login-wrapper">
+				<div style="margin: 0px auto 40px 23px;" >
+					<img src="<c:url value="/resources/images/logo-300.png"/>" alt="">
+				</div>
                 <form action="#" role="form">
-
+					
+					
                     <div class="panel panel-default">
-                        <div class="panel-heading"><h6 class="panel-title"> <img src="<c:url value="/resources/images/logo.png" /> "> User login</h6></div>
+                        <div class="panel-heading"><h6 class="panel-title"> <i class="fa fa-user"></i> User login</h6></div>
                         <div class="panel-body">
                             <div class="form-group has-feedback">
                                 <label>Username</label>
@@ -145,9 +160,7 @@
                                 <div class="col-xs-6">
                                     <button type="submit" class="btn btn-warning pull-right"><i class="fa fa-bars"></i> Sign in</button>
                                 </div>
-								
-								<P>  ${welcomeMessage} </P>
-								<P> ${Sensors} </P>
+						
 
                             </div>
                         </div>

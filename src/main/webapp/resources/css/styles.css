@@ -3705,7 +3705,8 @@ li.plupload_droptext {
 
 .login-wrapper {
   width: 350px;
-  margin: 80px auto 35px auto;
+  /*margin: 80px auto 35px auto;*/
+  margin: 20px auto 35px auto;
 }
 
 

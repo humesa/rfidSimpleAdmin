@@ -17,7 +17,8 @@ html {
 }
 
 body { 
-  background: url(../images/interface/background.png) repeat; 
+  /*background: url(../images/interface/background.png) repeat; */
+  background: url(../images/interface/pcModalBack.gif) repeat;
   font-size: 12px; 
   min-height: 100%; 
   position: relative; 
@@ -1040,8 +1041,10 @@ fieldset[disabled] .btn-success.active {
 /* Button warning */
 
 .btn-warning {
-  background-color: #E48561;
-  border-color: #E48561;
+  /*background-color: #E48561;
+  border-color: #E48561;*/
+  background-color: #ff9933;
+  border-color: #ccc;
 }
 .btn-warning:hover,
 .btn-warning:focus {
